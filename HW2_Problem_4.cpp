@@ -243,10 +243,12 @@ const stackType<Type>& stackType<Type>::operator=
 // list all the elements in the stack
 template <class Type>
 void stackType<Type>::printStack(){
-    
+    // Initialize index -> pointing to the value at the very top of the stack.
     int index = stackTop-1;
+    // Use while loop to print each value from top to bottom.
     while(index >= 0){
         cout << list[index] << " ";
+        // Decrease index by 1 to print values below.
         index--;
     }
     cout << endl;
@@ -267,9 +269,11 @@ Type& stackType<Type>::operator[](int index){
 // rounds: the amount of rounds for performing pushOperations and popOperations.
 void stackOperations(stackADT<int> & stack, int pushOperations, int popOperations, int rounds) {
     for (int i = 0; i < rounds; i++) {
+        // Add values to the stack.
         for (int i = 0; i < pushOperations; i++) {
             stack.push(i);
         }
+        // Remove values from the stack.
         for (int i = 0; i < popOperations; i++) {
             stack.pop();
         }
