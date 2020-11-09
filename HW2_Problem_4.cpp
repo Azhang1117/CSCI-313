@@ -203,20 +203,20 @@ void stackType<Type>::copyStack(const stackType<Type>& otherStack)
 } //end copyStack
 
 template<class Type>
-//increase array capacity when stack is full.
+// Increase array capacity when stack is full.
 void stackType<Type>::resizing(int capacity) {
-    //hold the original memory;
+    // Hold the original memory.
     Type* oldData = list;
     
-    maxStackSize = capacity;//change the  max stack size.
+    maxStackSize = capacity; // Change the max stack size.
     
-    list = new Type[maxStackSize];// get new memory for new array.
+    list = new Type[maxStackSize]; // Get new memory for new array.
     
-    //copy old data into new array
+    // Copy old data into new array.
     for (int j = 0; j < stackTop; j++)
         list[j] = oldData[j];
     
-    //release original memory
+    // Release original memory.
     delete[] oldData;
 }
 
