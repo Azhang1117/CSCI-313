@@ -492,14 +492,14 @@ int main() {
     // stackOperationTimes variable will store the time needed to complete the stackOperation function for array based stack.
     long long stackOperationTimes = TimeFunc([&]() {stackOperations(arrStack, pushOperationTotal, popOperationTotal,rounds); });
     // Print the time that it takes to complete array stack operations.
-    cout << "Array Based Stack Opeartions Time: " << stackOperationTimes << endl;
+    cout << "Array Based Stack Operations Time: " << stackOperationTimes << endl;
     
     // Declare a linked list based stack
     linkedStackType<int> listStack;
     // stackOperationTimes variable will store the time needed to complete the stackOperation function for linked list based stack.
     stackOperationTimes = TimeFunc([&]() {stackOperations(listStack, pushOperationTotal, popOperationTotal,rounds); });
     // Print the time that it takes to complete link list stack operations.
-    cout << "Linked List Based Stack Opeartions Time: " << stackOperationTimes << endl;
+    cout << "Linked List Based Stack Operations Time: " << stackOperationTimes << endl;
 }
 
 
