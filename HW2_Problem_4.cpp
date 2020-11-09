@@ -6,7 +6,7 @@
 //  Copyright © 2020 Amy Zhang. All rights reserved.
 //
 
-// Create your own stack functions to do the   following:
+// Create your own stack functions to do the following:
 //   a. List all the elements in the stack
 //   b. Iterate through the stack and change one of the values based on its position
 
